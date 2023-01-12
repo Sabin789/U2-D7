@@ -1,11 +1,25 @@
+#hero-header{
+    text-align: center;
+}
+.hero{
+    background-image: url(./img/Metallca.webp);
+    color: aliceblue;
+   animation-name: fadein;
+   animation-duration: 1.5s;
+}
 
+.card.col-sm-6.col-md-4.col-lg-2 {
+    margin: 2em;
+    
+}
+.card-body{
+    margin-top: -100px !important;
+}
 .btn{
     width: 100px;
 }
-.card.col-sm-6.col-md-4.col-lg-2{
-    width: 100%;
-  
-   
+.mx-0.px-0 img{
+    height: 60px;
 }
 .review{
     background-image: url(./img/Metallca.webp);
@@ -15,6 +29,29 @@
 .card-body{
     padding-top: 10em !important;
 }
-.hidden{
+/* .hidden{
     display:none;
+} */
+.btn-light:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.col-4{
+    position: relative;
+}
+#badge{
+    position: absolute;
+    top: 0px;
+    left: 13px;
+    border: 2px white solid;
+    z-index: 2;
+}
+button.hidden{
+    display: none;
+}
+tr:hover button.hidden{
+ display: inline-block;
+}
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
